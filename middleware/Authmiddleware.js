@@ -12,7 +12,7 @@ module.exports.authmiddleware = async (req, res, next) => {
     }
 
  
-    const decodedToken = jwt.verify(token, "FYP");
+    const decodedToken = jwt.verify(token, process.env.KEY_SECRET);
 
     
 

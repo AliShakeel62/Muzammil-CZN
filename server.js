@@ -73,11 +73,11 @@ app.use("/api/stocktransaction", stocktransactionrouter);
 
 
 
-server.listen(PORT, () => {
-  MongoDBconfig();
-  console.log(`The server is running at port ${PORT}`);
-});
+// server.listen(PORT, () => {
+//   MongoDBconfig();
+//   console.log(`The server is running at port ${PORT}`);
+// });
 
 
 
-module.exports = { io, server};
+module.exports = app;
